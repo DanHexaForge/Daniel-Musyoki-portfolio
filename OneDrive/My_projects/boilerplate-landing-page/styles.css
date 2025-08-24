@@ -32,6 +32,7 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   letter-spacing: -0.01em;
+  padding-top: 80px;
 }
 
 a:not([class]) {
@@ -188,6 +189,14 @@ h5,
   text-decoration: none;
   color: #fff;
 }
+#home {
+  min-height: calc(100vh - 120px); /* Adjust 120px to your navbar+footer height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
 
 /* Hero section */
 .hero_content {
@@ -236,17 +245,35 @@ body {
 /* 2. Sections hidden by default except hero */
 section {
   display: none;
+  position: fixed;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 160px);
+  overflow-y: auto;
+  z-index: 1;
+}
+
+section:target {
+  display: block;
+  z-index: 10;
 }
 
 section#hero {
   display: block;
 }
 
-/* Show section when targeted via nav link */
-section:target {
-  display: block;
+#about:target ~ section#hero {
+  display: none;
 }
 
+#work:target ~ section#hero {
+  display: none;
+}
+
+#contact:target ~ section#hero {
+  display: none;
+}
 
 /* About section */
 .about_content {
@@ -375,6 +402,4 @@ main {
   z-index: 998;
    -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
- 
 }
-

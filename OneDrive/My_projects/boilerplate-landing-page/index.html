@@ -21,53 +21,46 @@
   <body>
     <!-- NAVIGATION -->
     <header class="glass_nav fixed-top">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-          <button aria-label="Send message">
-            <i class="fa fa-paper-plane"></i>
-          </button>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
-              <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-              <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
-              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <!-- Left: logo -->
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="/assets/logo1.png" alt="Danrow Inovations" width="40" height="40" class="me-2"/>
+      <span class="fw-bold">Danrow Inovations</span>
+    </a>
+
+    <!-- Tagline -->
+    <span class="navbar-text mx-auto text-light">
+      Forging Simplicity: Where Innovation meets everyday tech
+    </span>
+
+    <!-- Toggler + Links -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#work">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
     </header>
 
-    <main class="mt-5 pt-5">
-      <!-- HERO -->
-      <section id="hero" class="text-center py-5 bg-light">
-        <div class="container">
-          <h1 class="display-4 fw-bold">Daniel Musyoki</h1>
-          <p class="lead">FULL STACK DEVELOPER</p>
-          <div class="d-flex justify-content-center mt-4 gap-3">
-  <p class="me-3"><i class="fa-solid fa-location-dot"></i> Nairobi, Kenya</p>
-  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="text-dark">
-    <i class="fab fa-github fa-lg"></i> GitHub
-  </a>
-  <a href="https://x.com/danielwambuz" target="_blank" rel="noopener noreferrer" class="text-dark">
-    <i class="fab fa-x-twitter fa-lg"></i> Twitter
-  </a>
-</div>
-
-        </div>
-      </section>
-
+    <main>
       <!-- ABOUT -->
       <section id="about" class="py-5">
         <div class="container text-center">
@@ -99,11 +92,12 @@
       <section id="work" class="py-5 bg-light">
         <div class="container text-center">
           <h3 class="mb-4">
-            So far I've helped 20+ companies build their web presence and
-            improve their technical documentation.
+            I have contributed to over 40+ projects in the open source for both the front end and back end
+            
+            <div class="d-flex flex-wrap justify-content-center gap-4"><span>Front End</span><ul><li><a href="https://codepen.io/your-work?cursor=ZD0xJm89MCZwPTEmdj04MjA2ODQwNA==" target="_blank" rel='noopener noreferrer' class="text-dark">HTML,CSS,REACT & JavaScript</a><img src='/assets/javascript.png' alt='Front End' class='img-fluid'/></li></ul></div>
           </h3>
-          <div class="d-flex flex-wrap justify-content-center gap-4">
-            <img src="/assets/logo1.png" alt="Acme Corp" class="img-fluid" />
+          <div class="d-flex flex-wrap justify-content-center gap-4"><a href="https://replit.com/repls" target='blank' rel='noopener noreferrer' class='text-dark'>Back-end using PostgreSQL,MongoDB,Express,Node.js,http-chai,Authentition with passport,scalabilty using pug and engine template</a>
+            <img src="/assets/back-end.png" alt="Back-end" class="img-fluid" />
             <img src="/assets/logo2.png" alt="Acme Innovations" class="img-fluid" />
             <img src="/assets/logo1.png" alt="Acme Solutions" width="50" height="50" />
             <img src="/assets/logo3.png" alt="Acme Technologies" class="img-fluid" />
@@ -157,6 +151,24 @@
             </div>
           </form>
           <div id="status" class="text-center mt-3"></div>
+        </div>
+      </section>
+
+      <!-- HERO -->
+      <section id="hero" class="text-center py-5 bg-light">
+        <div class="container">
+          <h1 class="display-4 fw-bold">Daniel Musyoki</h1>
+          <p class="lead">FULL STACK DEVELOPER</p>
+          <div class="d-flex justify-content-center mt-4 gap-3">
+  <p class="me-3"><i class="fa-solid fa-location-dot"></i> Nairobi, Kenya</p>
+  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="text-dark">
+    <i class="fab fa-github fa-lg"></i> GitHub
+  </a>
+  <a href="https://x.com/danielwambuz" target="_blank" rel="noopener noreferrer" class="text-dark">
+    <i class="fab fa-x-twitter fa-lg"></i> Twitter
+  </a>
+</div>
+
         </div>
       </section>
     </main>
